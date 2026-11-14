@@ -7,26 +7,60 @@
 >
 > Some folder variants may still be missing.
 
+## Preview
+
 Folder icon themes based on Papirus, recolored with the Neutral, Cold and Warm variants of MonoYou.
 
-| Theme | Folder color |
-| --- | --- |
-| [MonoYou Folders Neutral](icons/MonoYou-Folders-Neutral/) | `#929292` |
-| [MonoYou Folders Cold](icons/MonoYou-Folders-Cold/) | `#9298A3` |
-| [MonoYou Folders Warm](icons/MonoYou-Folders-Warm/) | `#A29E99` |
+| Theme | Folder | Home | Desktop | Documents | Downloads | Music | Pictures | Public | Videos |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Neutral** | ![](icons/MonoYou-Folders-Neutral/48x48/places/folder-grey.svg) | ![](icons/MonoYou-Folders-Neutral/48x48/places/folder-grey-home.svg) | ![](icons/MonoYou-Folders-Neutral/48x48/places/folder-grey-desktop.svg) | ![](icons/MonoYou-Folders-Neutral/48x48/places/folder-grey-documents.svg) | ![](icons/MonoYou-Folders-Neutral/48x48/places/folder-grey-download.svg) | ![](icons/MonoYou-Folders-Neutral/48x48/places/folder-grey-music.svg) | ![](icons/MonoYou-Folders-Neutral/48x48/places/folder-grey-pictures.svg) | ![](icons/MonoYou-Folders-Neutral/48x48/places/folder-grey-public.svg) | ![](icons/MonoYou-Folders-Neutral/48x48/places/folder-grey-videos.svg) |
+| **Cold** | ![](icons/MonoYou-Folders-Cold/48x48/places/folder-grey.svg) | ![](icons/MonoYou-Folders-Cold/48x48/places/folder-grey-home.svg) | ![](icons/MonoYou-Folders-Cold/48x48/places/folder-grey-desktop.svg) | ![](icons/MonoYou-Folders-Cold/48x48/places/folder-grey-documents.svg) | ![](icons/MonoYou-Folders-Cold/48x48/places/folder-grey-download.svg) | ![](icons/MonoYou-Folders-Cold/48x48/places/folder-grey-music.svg) | ![](icons/MonoYou-Folders-Cold/48x48/places/folder-grey-pictures.svg) | ![](icons/MonoYou-Folders-Cold/48x48/places/folder-grey-public.svg) | ![](icons/MonoYou-Folders-Cold/48x48/places/folder-grey-videos.svg) |
+| **Warm** | ![](icons/MonoYou-Folders-Warm/48x48/places/folder-grey.svg) | ![](icons/MonoYou-Folders-Warm/48x48/places/folder-grey-home.svg) | ![](icons/MonoYou-Folders-Warm/48x48/places/folder-grey-desktop.svg) | ![](icons/MonoYou-Folders-Warm/48x48/places/folder-grey-documents.svg) | ![](icons/MonoYou-Folders-Warm/48x48/places/folder-grey-download.svg) | ![](icons/MonoYou-Folders-Warm/48x48/places/folder-grey-music.svg) | ![](icons/MonoYou-Folders-Warm/48x48/places/folder-grey-pictures.svg) | ![](icons/MonoYou-Folders-Warm/48x48/places/folder-grey-public.svg) | ![](icons/MonoYou-Folders-Warm/48x48/places/folder-grey-videos.svg) |
 
 ## Installation
 
-Install Papirus first. These themes provide folder icons and inherit the rest from Papirus-Dark.
+### Requirements
 
-From a Git checkout on Linux, run `./setup.sh install` to install all three
-variants for your user. The script preserves the icon symlinks and writes to
-`$XDG_DATA_HOME/icons` or `~/.local/share/icons/` by default. It updates each
-theme's cache if `gtk-update-icon-cache` is available.
+Install Papirus before proceeding. MonoYou Folders provides custom folder icons and inherits the remaining icons from Papirus-Dark.
 
-Run `./setup.sh uninstall` to remove the three themes.
+### Automatic Installation
 
-On KDE Plasma, open **System Settings → Icons**, select a MonoYou Folders variant and apply it. If Dolphin still shows the previous icons, close and reopen it.
+Install all three variants with a single command:
+
+```bash
+git clone --depth=1 https://github.com/edwardzerov2/monoyou-folders.git /tmp/monoyou-folders && bash /tmp/monoyou-folders/setup.sh install && rm -rf /tmp/monoyou-folders
+```
+
+### Manual Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/edwardzerov2/monoyou-folders.git
+cd monoyou-folders
+```
+
+Install the themes:
+
+```bash
+./setup.sh install
+```
+
+The installation script preserves symbolic links, installs the themes to `$XDG_DATA_HOME/icons` (default: `~/.local/share/icons`), and updates the icon caches when `gtk-update-icon-cache` is available.
+
+### Uninstallation
+
+From a local checkout, run:
+
+```bash
+./setup.sh uninstall
+```
+
+### Applying the Theme
+
+On KDE Plasma, open **System Settings → Icons**, select your preferred MonoYou Folders variant and apply it.
+
+If Dolphin still displays the previous icons, restart it.
 
 ## Credits and license
 
