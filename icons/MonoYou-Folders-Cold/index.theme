@@ -1,4 +1,5 @@
 [Icon Theme]
+FollowsColorScheme=true
 Name=MonoYou-Folders-Cold
 Inherits=Papirus-Dark
 Directories=16x16/places,22x22/places,24x24/places,32x32/places,48x48/places,64x64/places,96x96/places,128x128/places
