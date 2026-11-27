@@ -25,21 +25,32 @@ git clone https://github.com/edwardzerov2/monoyou-folders.git
 cd monoyou-folders
 ```
 
-Install all three variants:
+Install or update all themes:
 
 ```sh
 bash setup.sh install
 ```
 
-To install a specific variant:
+Uninstall all themes:
 
 ```sh
-bash setup.sh install Cold
+bash setup.sh uninstall
 ```
 
-Replace `Cold` with `Neutral` or `Warm` for other variants.
+To manage specific themes, use:
 
-Select the installed theme in your desktop's icon settings.
+```sh
+bash setup.sh [action] [variant]
+```
+
+| Argument | Available values | Default |
+|---|---|---|
+| `action` | `install`, `uninstall` | — |
+| `variant` | `Cold`, `Neutral`, `Warm`, `All` | `All` |
+
+Themes are installed in `${XDG_DATA_HOME:-$HOME/.local/share}/icons`.
+
+Select your preferred icon theme in your desktop environment settings.
 
 ## Uninstallation
 
