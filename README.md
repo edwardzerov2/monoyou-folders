@@ -1,69 +1,62 @@
-# MonoYou Icons
+# MonoYou Folders
 
-> [!WARNING]
-> **WORK IN PROGRESS**
->
-> MonoYou Icons is currently under active development. Folder icon designs and theme coverage may change before the first stable release.
->
-> Some folder variants may still be missing.
+Minimal folder icon themes based on Papirus, available in three tonal variants: **Cold**, **Neutral** and **Warm**.
 
-## Preview
+## Requirements
 
-Folder icon themes based on Papirus, recolored with the Neutral, Cold and Warm variants of MonoYou.
-
-| Theme | Folder | Home | Desktop | Documents | Downloads | Music | Pictures | Public | Videos |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Cold** | ![](icons/MonoYou-Folders-Cold/48x48/places/folder-grey.svg) | ![](icons/MonoYou-Folders-Cold/48x48/places/folder-grey-home.svg) | ![](icons/MonoYou-Folders-Cold/48x48/places/folder-grey-desktop.svg) | ![](icons/MonoYou-Folders-Cold/48x48/places/folder-grey-documents.svg) | ![](icons/MonoYou-Folders-Cold/48x48/places/folder-grey-download.svg) | ![](icons/MonoYou-Folders-Cold/48x48/places/folder-grey-music.svg) | ![](icons/MonoYou-Folders-Cold/48x48/places/folder-grey-pictures.svg) | ![](icons/MonoYou-Folders-Cold/48x48/places/folder-grey-public.svg) | ![](icons/MonoYou-Folders-Cold/48x48/places/folder-grey-videos.svg) |
-| **Neutral** | ![](icons/MonoYou-Folders-Neutral/48x48/places/folder-grey.svg) | ![](icons/MonoYou-Folders-Neutral/48x48/places/folder-grey-home.svg) | ![](icons/MonoYou-Folders-Neutral/48x48/places/folder-grey-desktop.svg) | ![](icons/MonoYou-Folders-Neutral/48x48/places/folder-grey-documents.svg) | ![](icons/MonoYou-Folders-Neutral/48x48/places/folder-grey-download.svg) | ![](icons/MonoYou-Folders-Neutral/48x48/places/folder-grey-music.svg) | ![](icons/MonoYou-Folders-Neutral/48x48/places/folder-grey-pictures.svg) | ![](icons/MonoYou-Folders-Neutral/48x48/places/folder-grey-public.svg) | ![](icons/MonoYou-Folders-Neutral/48x48/places/folder-grey-videos.svg) |
-| **Warm** | ![](icons/MonoYou-Folders-Warm/48x48/places/folder-grey.svg) | ![](icons/MonoYou-Folders-Warm/48x48/places/folder-grey-home.svg) | ![](icons/MonoYou-Folders-Warm/48x48/places/folder-grey-desktop.svg) | ![](icons/MonoYou-Folders-Warm/48x48/places/folder-grey-documents.svg) | ![](icons/MonoYou-Folders-Warm/48x48/places/folder-grey-download.svg) | ![](icons/MonoYou-Folders-Warm/48x48/places/folder-grey-music.svg) | ![](icons/MonoYou-Folders-Warm/48x48/places/folder-grey-pictures.svg) | ![](icons/MonoYou-Folders-Warm/48x48/places/folder-grey-public.svg) | ![](icons/MonoYou-Folders-Warm/48x48/places/folder-grey-videos.svg) |
+Install [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) before proceeding. MonoYou Folders inherits the remaining icons from Papirus-Dark.
 
 ## Installation
 
-### Requirements
+### Automatic
 
-Install Papirus before proceeding. MonoYou Folders provides custom folder icons and inherits the remaining icons from Papirus-Dark.
+Run the interactive installer:
 
-### Automatic Installation
-
-Install all three variants with a single command:
-
-```bash
-git clone --depth=1 https://github.com/edwardzerov2/monoyou-folders.git /tmp/monoyou-folders && bash /tmp/monoyou-folders/setup.sh install && rm -rf /tmp/monoyou-folders
+```sh
+curl -fsSL https://raw.githubusercontent.com/edwardzerov2/monoyou-folders/main/install.sh | bash
 ```
 
-### Manual Installation
+### Manual
 
 Clone the repository:
 
-```bash
+```sh
 git clone https://github.com/edwardzerov2/monoyou-folders.git
 cd monoyou-folders
 ```
 
-Install the themes:
+Install all three variants:
 
-```bash
-./setup.sh install
+```sh
+bash setup.sh install
 ```
 
-The installation script preserves symbolic links, installs the themes to `$XDG_DATA_HOME/icons` (default: `~/.local/share/icons`), and updates the icon caches when `gtk-update-icon-cache` is available.
+To install a specific variant:
 
-### Uninstallation
+```sh
+bash setup.sh install Cold
+```
+
+Replace `Cold` with `Neutral` or `Warm` for other variants.
+
+Select the installed theme in your desktop's icon settings.
+
+## Uninstallation
 
 From a local checkout, run:
 
-```bash
-./setup.sh uninstall
+```sh
+bash setup.sh uninstall
 ```
 
-### Applying the Theme
+Append a variant name to remove only that theme.
 
-On KDE Plasma, open **System Settings → Icons**, select your preferred MonoYou Folders variant and apply it.
+## Credits & License
 
-If Dolphin still displays the previous icons, restart it.
+Based on [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme).
 
-## Credits and license
+Colors provided by [MonoYou Colors](https://github.com/edwardzerov2/monoyou-colors).
 
-**Modification notice (2026-11-14).** MonoYou Folders recolored the original Papirus folder SVGs for the Neutral, Cold and Warm palettes. See the [GPLv3 license](LICENSE).
+**Modification notice (2026-11-14):** Original Papirus folder SVGs recolored using the Cold, Neutral and Warm palettes.
 
-The folder SVGs are adapted from [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) and distributed under the GNU General Public License version 3. Each theme includes the Papirus license and author credits. The colors come from [MonoYou Colors](https://github.com/edwardzerov2/monoyou-colors).
+Licensed under the [GNU GPL v3](LICENSE).
