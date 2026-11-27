@@ -2,6 +2,26 @@
 
 Minimal folder icon themes based on Papirus, available in three tonal variants: **Cold**, **Neutral** and **Warm**.
 
+## Preview
+
+### Cold
+
+| Default | Home | Documents | Downloads | Pictures | Music | Videos |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| ![Default](icons/MonoYou-Folders-Cold/64x64/places/folder-grey.svg) | ![Home](icons/MonoYou-Folders-Cold/64x64/places/folder-grey-home.svg) | ![Documents](icons/MonoYou-Folders-Cold/64x64/places/folder-grey-documents.svg) | ![Downloads](icons/MonoYou-Folders-Cold/64x64/places/folder-grey-download.svg) | ![Pictures](icons/MonoYou-Folders-Cold/64x64/places/folder-grey-pictures.svg) | ![Music](icons/MonoYou-Folders-Cold/64x64/places/folder-grey-music.svg) | ![Videos](icons/MonoYou-Folders-Cold/64x64/places/folder-grey-videos.svg) |
+
+### Neutral
+
+| Default | Home | Documents | Downloads | Pictures | Music | Videos |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| ![Default](icons/MonoYou-Folders-Neutral/64x64/places/folder-grey.svg) | ![Home](icons/MonoYou-Folders-Neutral/64x64/places/folder-grey-home.svg) | ![Documents](icons/MonoYou-Folders-Neutral/64x64/places/folder-grey-documents.svg) | ![Downloads](icons/MonoYou-Folders-Neutral/64x64/places/folder-grey-download.svg) | ![Pictures](icons/MonoYou-Folders-Neutral/64x64/places/folder-grey-pictures.svg) | ![Music](icons/MonoYou-Folders-Neutral/64x64/places/folder-grey-music.svg) | ![Videos](icons/MonoYou-Folders-Neutral/64x64/places/folder-grey-videos.svg) |
+
+### Warm
+
+| Default | Home | Documents | Downloads | Pictures | Music | Videos |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| ![Default](icons/MonoYou-Folders-Warm/64x64/places/folder-grey.svg) | ![Home](icons/MonoYou-Folders-Warm/64x64/places/folder-grey-home.svg) | ![Documents](icons/MonoYou-Folders-Warm/64x64/places/folder-grey-documents.svg) | ![Downloads](icons/MonoYou-Folders-Warm/64x64/places/folder-grey-download.svg) | ![Pictures](icons/MonoYou-Folders-Warm/64x64/places/folder-grey-pictures.svg) | ![Music](icons/MonoYou-Folders-Warm/64x64/places/folder-grey-music.svg) | ![Videos](icons/MonoYou-Folders-Warm/64x64/places/folder-grey-videos.svg) |
+
 ## Requirements
 
 Install [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) before proceeding. MonoYou Folders inherits the remaining icons from Papirus-Dark.
